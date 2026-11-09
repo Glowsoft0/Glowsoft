@@ -26,8 +26,8 @@ GitHub Pages is static, so the form uses Formspree (free tier).
 The site currently offers a consultation request through the contact form. It does not falsely confirm appointment availability. Connect a real Cal.com/Calendly booking URL only after setting up the calendar and availability.
 
 ## Customization
-- Main styles: `css/styles.css`
-- Navigation, cookie preference and year: `js/main.js`
+- Main styles: `assets/styles.css`
+- Navigation, cookie preference and year: `assets/main.js`
 - Pages: root-level HTML files
 - Domain references: sitemap and robots.txt
 
