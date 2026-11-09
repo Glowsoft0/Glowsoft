@@ -25,4 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".cookie-reject").forEach(b => b.addEventListener("click", () => {
     localStorage.setItem("glowsoft-cookie-choice", "essential"); if (banner) banner.hidden = true;
   }));
+
+  /* Add REAL, permissioned client reviews below. The section stays hidden while the list is empty.
+     Example: {quote:"...", name:"Jane Doe", role:"Operations Lead, Company"} */
+  const TESTIMONIALS = [];
+  const tSec = document.querySelector("[data-testimonials]");
+  if (tSec && TESTIMONIALS.length) {
+    const grid = tSec.querySelector(".t-grid");
+    TESTIMONIALS.forEach(t => {
+      const f = document.createElement("figure"); f.className = "t-card";
+      const p = document.createElement("p"); p.textContent = "\u201C" + t.quote + "\u201D";
+      const b = document.createElement("b"); b.textContent = t.name;
+      const s = document.createElement("span"); s.textContent = t.role;
+      f.append(p, b, s); grid.appendChild(f);
+    });
+    tSec.hidden = false;
+  }
 });
