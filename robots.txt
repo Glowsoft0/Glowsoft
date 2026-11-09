@@ -1,1 +1,4 @@
-User-agent: *\nAllow: /\n\nSitemap: https://glowsoft.xyz/sitemap.xml\n
+User-agent: *
+Allow: /
+
+Sitemap: https://glowsoft.xyz/sitemap.xml
